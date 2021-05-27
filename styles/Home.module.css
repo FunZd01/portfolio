@@ -1,11 +1,13 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  border-top: 1em solid darkorchid;
 }
 
 .main {
@@ -19,8 +21,8 @@
 
 .footer {
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  height: 2em;
+  border-top: 1px solid floralwhite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,12 +46,12 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 15vw;
   text-shadow: 3px 1px 1px darkorchid;
 }
 
 .title:hover{
-  font-style: italic;
+  font-weight: lighter;
   cursor: pointer;
 }
 
