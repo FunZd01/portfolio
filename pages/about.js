@@ -1,10 +1,12 @@
-function About(){
-    return (
-        <div>
+import Layout from '../components/Layout'
+import styles from '../styles/Home.module.css'
+
+const About = () => (
+    <Layout>
+        <div className={styles.main}>
             <h1>ABOUT</h1>
-            <h3>hola bienvenidos mi nombre es <span>Domingo Funez</span></h3>
         </div>
-    )
-}
+    </Layout>
+)
 
 export default About
