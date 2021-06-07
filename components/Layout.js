@@ -12,9 +12,7 @@ const Layout = ({children}) => (
             <Navbar/>
             {children}
             <footer className={styles.footer}>
-                <div className="text-right">
                     &copy; funzd 2021
-                </div>
             </footer>
         </div>
     </>

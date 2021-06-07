@@ -3,12 +3,14 @@ import Link from "next/link";
 import {Navbar, Nav, Container} from 'react-bootstrap'
 
 const Navbars = () => (
-    <Navbar bg="info" expand="lg" className={"bg-info"}>
+    <Navbar bg="info"  expand="lg" fixed={"top"}>
         <Container>
-            <Navbar.Brand href="/">Portfolio</Navbar.Brand>
+            <Link href="/">
+            <Navbar.Brand><a>Portfolio</a></Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-            <Navbar.Collapse id="basic-navbar-nav">
-                <ul className="navbar-nav mr-auto">
+            <Navbar.Collapse id="basic-navbar-nav" className={" justify-content-end"}>
+                <ul className="navbar-nav">
                     <li className="nav-item active">
                         <Link href={"/"}>
                             <a className="nav-link">Home</a>
