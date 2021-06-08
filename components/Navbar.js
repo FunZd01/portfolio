@@ -1,22 +1,24 @@
-import '../styles/Home.module.css'
+import '../styles/Home.module.css';
 import Link from "next/link";
-import {Navbar, Nav, Container} from 'react-bootstrap'
+import {Navbar, Container} from 'react-bootstrap';
 
 const Navbars = () => (
-    <Navbar bg="info" expand="lg" className={"bg-info"}>
+    <Navbar bg="info" expand="lg" fixed={"top"}>
         <Container>
-            <Navbar.Brand href="/">Portfolio</Navbar.Brand>
+            <Link href="/">
+                <Navbar.Brand><a>Portfolio</a></Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-            <Navbar.Collapse id="basic-navbar-nav">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
+            <Navbar.Collapse id="basic-navbar-nav" className={" justify-content-end"}>
+                <ul className="navbar-nav">
+                    <li className="nav-item">
                         <Link href={"/"}>
-                            <a className="nav-link">Home</a>
+                            <a className="nav-link" >Inicio</a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href={"/about"}>
-                            <a className="nav-link">Skills</a>
+                            <a className="nav-link">CV</a>
                         </Link>
                     </li>
                 </ul>
