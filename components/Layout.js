@@ -8,7 +8,7 @@ const Layout = ({children}) => (
             <title>portfolio</title>
             <meta name="description" content="Domingo Funez: portafolio que demuestra habilidades y tecnicas"/>
         </Head>
-        <div classname={styles.container}>
+        <div className={styles.container}>
             <Navbar/>
             {children}
             <footer className={styles.footer}>

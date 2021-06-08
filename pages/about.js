@@ -1,32 +1,33 @@
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
-import {Container,Row,Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
+import {exp} from '../skills'
+
+console.log(exp);
 
 const About = () => (
     <Layout>
         <div className={styles.main}>
             <Container className={"mb-5"}>
                 <Row>
-                    <Col xs={12} md={4}>
-                        columns
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, labore quidem!
-                            Accusamus atque deserunt enim laboriosam magni modi, omnis quam repellat reprehenderit rerum
-                            tempore ut, vitae voluptate? At, consequuntur cupiditate.</div>
-                        <div>Aspernatur atque aut, consectetur, culpa cupiditate dolor ea esse et eum eveniet explicabo
-                            facilis fuga libero magnam mollitia nam necessitatibus nulla officia perferendis porro quas
-                            quisquam, quod rem tempore voluptas.
-                        </div>
-                        <div>Amet, consectetur consequatur dolore dolorum est et, eveniet laboriosam maiores obcaecati
-                            provident repellendus, reprehenderit tempore tenetur voluptates voluptatibus? Adipisci dicta
-                            dolore doloribus expedita fuga harum molestiae qui reprehenderit sit voluptates.
-                        </div>
-                        <div>Atque, consectetur debitis dolore ea eaque enim explicabo neque non quae qui repellat
-                            tempore voluptas? Autem blanditiis deserunt eveniet, illum magnam quidem rerum! At dolores
-                            magni possimus temporibus ut, veniam.
-                        </div>
+                    <Col xs={12} md={3}>
+                        <h1>Habilidades</h1>
+
+                        {
+                            exp.map(({skill, percentage}, i) => (
+                            <div className="py-3" key={i}>
+                                <h5>{skill}</h5>
+                                <div className="progress">
+                                    <div className={"progress-bar-striped progress-bar-animated bg-info"} role={"progressbar"} style={{width: `${percentage}%`}}>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                        }
+
                     </Col>
-                    <Col xs={12} md={4}>
-                        columns
+                    <Col xs={12} md={6}>
+                        experience
                         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur debitis est
                             impedit iure magnam numquam reprehenderit ullam. Architecto deleniti doloribus enim illum in
                             numquam omnis quasi qui sapiente sunt.</div>
@@ -43,23 +44,9 @@ const About = () => (
                             quas qui ut veniam, voluptatem, voluptatum.
                         </div>
                     </Col>
-                    <Col xs={12} md={4}>
-                        columns
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at delectus
-                            eligendi expedita, illo inventore, itaque iure magnam minus necessitatibus nesciunt omnis
-                            possimus provident quis, quo rem soluta voluptatum.</div>
-                        <div>Facere, fuga natus? A amet architecto atque consequuntur deleniti eius ex explicabo omnis
-                            perspiciatis placeat repellendus suscipit, ullam voluptatem. At cupiditate eos illo maxime
-                            molestias nobis quae recusandae sint vero.
-                        </div>
-                        <div>A alias aliquam animi consectetur culpa eaque enim est illum, laborum nesciunt obcaecati
-                            officia praesentium quasi rem totam voluptate voluptatibus. Blanditiis deserunt ea expedita
-                            recusandae sequi sint sit suscipit tempore?
-                        </div>
-                        <div>Corporis earum nam ratione. Consequatur cupiditate debitis eius iste praesentium quam velit
-                            vitae voluptatibus. Earum eum molestias placeat praesentium rem! Beatae eaque esse eum illum
-                            ipsa molestiae omnis perferendis soluta.
-                        </div>
+                    <Col xs={12} md={3}>
+                        intereses
+
                     </Col>
                 </Row>
             </Container>
