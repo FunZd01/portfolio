@@ -4,16 +4,17 @@ import Link from 'next/link'
 
 const index = () => (
     <Layout>
-        <main className={styles.main}>
-            <div className="col-6">
-                <h1 className={styles.title}>
-                    <Link href="#">
-                        <a>DOMINGO FUNEZ!</a>
-                    </Link>
-
-                </h1>
-            </div>
-        </main>
+        <div className="bg">
+            <main className={styles.main}>
+                <div className="col-6">
+                    <h1 className={styles.title}>
+                        <Link href="#">
+                            <a>DOMINGO FUNEZ!</a>
+                        </Link>
+                    </h1>
+                </div>
+            </main>
+        </div>
     </Layout>
 )
 
