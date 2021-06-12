@@ -1,18 +1,28 @@
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 import {Container, Row, Col} from 'react-bootstrap';
-import {exp} from '../skills'
+import Image from 'react-bootstrap/Image';
+import {exp} from '../skills';
 
 const About = () => (
     <Layout>
         <div className={styles.main}>
             <Container className={"mb-2"}>
-                <Row>
+                <Row className={"bg-info p-2 justify-content-center rounded"}>
+                    <Col className={""} xs={10} md={3}>
+                        <Image src={"profile.jpg"} alt={"foto de perfil"} roundedCircle={true} thumbnail={true}
+                               width={"200"} >
+                        </Image>
+                    </Col>
+                    <Col xs={12} md={5}>
+                        <h4>
+                            Domingo Funez,<span className={"lead"}> backend developer</span>
+                        </h4>
+                    </Col>
                 </Row>
                 <Row>
                     <Col xs={12} md={3} className={"border-bottom border-top border-info"}>
                         <h1>Habilidades</h1>
-
                         {
                             exp.map(({skill, percentage}, i) => (
                                 <div className="py-3" key={i}>
