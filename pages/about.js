@@ -9,19 +9,21 @@ const About = () => (
         <div className={styles.main}>
             <Container className={"mb-2"}>
                 <Row className={"bg-info p-2 justify-content-center rounded"}>
-                    <Col className={""} xs={10} md={3}>
+                    <Col className={"mb-2"} xs={10} md={3}>
                         <Image src={"profile.jpg"} alt={"foto de perfil"} roundedCircle={true} thumbnail={true}
                                width={"200"} >
                         </Image>
                     </Col>
-                    <Col xs={12} md={5}>
-                        <h4>
-                            Domingo Funez,<span className={"lead"}> backend developer</span>
-                        </h4>
+                    <Col className={"text-center"} xs={12} md={5}>
+                        <h3>BACKEND DEVELOPER</h3>
+                        autodidacta, responsable y amante de los desafios que requieran usar el ingenio!<br/>
+                        <button type={"button"} className={"btn btn-dark rounded-pill p-2 mt-5"} style={{width: '100%' }}>
+                            CONTRATAR!
+                        </button>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} md={3} className={"border-bottom border-top border-info"}>
+                    <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1>Habilidades</h1>
                         {
                             exp.map(({skill, percentage}, i) => (
@@ -36,11 +38,11 @@ const About = () => (
                             ))
                         }
                     </Col>
-                    <Col xs={12} md={6} className={"border-bottom border-top border-info"}>
+                    <Col xs={12} md={6} className={"rounded p-2 bg-info"}>
                         <h1>Experiencia</h1>
 
                     </Col>
-                    <Col xs={12} md={3} className={"border-bottom border-top border-info"}>
+                    <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1>intereses</h1>
                         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet debitis dolore earum
                             error excepturi impedit magnam odit suscipit tenetur totam vitae, voluptate voluptatibus?

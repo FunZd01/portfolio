@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const index = () => (
     <Layout>
-        <div className="bg">
+        {/*<div className="bg">*/}
             <main className={styles.main}>
                 <div className="col-6">
                     <h1 className={styles.title}>
@@ -14,7 +14,7 @@ const index = () => (
                     </h1>
                 </div>
             </main>
-        </div>
+        {/*</div>*/}
     </Layout>
 )
 
