@@ -62,15 +62,8 @@ const About = () => (
                         }
                     </Col>
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
-                        <h1 className={"text-center"}>intereses</h1>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet debitis dolore earum
-                            error excepturi impedit magnam odit suscipit tenetur totam vitae, voluptate voluptatibus?
-                            Esse iste quas rem repellat voluptas.
-                        </div>
-                        <div>Alias, aspernatur aut dicta doloremque nesciunt odio omnis quas sed similique ut. A ad
-                            consequuntur, culpa cumque doloremque enim eos facere ipsam itaque nisi nostrum officia quam
-                            temporibus unde velit?
-                        </div>
+                        <h1 className={"text-center"}>Estudios</h1>
+
                     </Col>
                 </Row>
             </Container>

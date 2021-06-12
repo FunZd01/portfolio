@@ -7,6 +7,6 @@ export const data = [
         yearf:2022,
         desc: "Este ha sido mi primer empleo en el area del IT, en el cual fui capaz " +
             " de desarrollar y cumplir con las tareas propuestas, un poco complicado al"
-            + " inicio, pues no es lo mismo realizar tareas de la univrsidad que tareas para un trabajo profesional"
+            + " inicio, pues no es lo mismo realizar tareas de la universidad que tareas para un trabajo profesional"
     },
 ]

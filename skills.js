@@ -1,5 +1,13 @@
 export const exp = [
     {
+        skill:"HTML",
+        percentage: 95
+    },
+    {
+        skill:"CSS",
+        percentage: 90
+    },
+    {
         skill:"PYTHON",
         percentage: 90
     },
