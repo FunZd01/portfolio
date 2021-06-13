@@ -29,18 +29,20 @@ const About = () => (
                 <Row>
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Habilidades</h1>
-                        {
-                            exp.map(({skill, percentage}, i) => (
-                                <div className="py-3" key={i}>
-                                    <h5>{skill}</h5>
-                                    <div className="progress">
-                                        <div className={"progress-bar-striped progress-bar-animated bg-info"}
-                                             role={"progressbar"} style={{width: `${percentage}%`}}>
+                        <div className="border border-info rounded p-2">
+                            {
+                                exp.map(({skill, percentage}, i) => (
+                                    <div className="py-3" key={i}>
+                                        <h5>{skill}</h5>
+                                        <div className="progress">
+                                            <div className={"progress-bar-striped progress-bar-animated bg-info"}
+                                                 role={"progressbar"} style={{width: `${percentage}%`}}>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
+                        </div>
                     </Col>
                     <Col xs={12} md={6} className={"rounded p-2 bg-dark  text-light"}>
                         <h1 className={"text-center"}>Experiencia</h1>
@@ -65,9 +67,9 @@ const About = () => (
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Estudios</h1>
                         {
-                            est.map(({duration,place,estudio},i)=>(
-                                <div className={"m-2 p-2"} key={i}>
-                                    <div className={"blockquote"}>
+                            est.map(({duration, place, estudio}, i) => (
+                                <div key={i}>
+                                    <div className={"blockquote border border-info rounded p-2 mb-2"}>
                                         <h5>{place}
                                             <span className={"text-muted"}> {duration}</span>
                                         </h5>
