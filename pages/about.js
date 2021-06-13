@@ -4,6 +4,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import {exp} from '../skills';
 import {data} from '../experience';
+import {est} from '../Estudios';
 
 const About = () => (
     <Layout>
@@ -45,7 +46,7 @@ const About = () => (
                         <h1 className={"text-center"}>Experiencia</h1>
                         {
                             data.map(({cargo, company, duration, year, yearf, desc}, i) => (
-                                <div className={"py-3 border border-info rounded m-2"} key={i}>
+                                <div className={"p-2 border border-info rounded m-2"} key={i}>
                                     <div className={"blockquote"}>
                                         <h5>{cargo}
                                             <span className={"text-muted"}> at {company}</span>
@@ -63,7 +64,20 @@ const About = () => (
                     </Col>
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Estudios</h1>
-
+                        {
+                            est.map(({duration,place,estudio},i)=>(
+                                <div className={"m-2 p-2"} key={i}>
+                                    <div className={"blockquote"}>
+                                        <h5>{place}
+                                            <span className={"text-muted"}> {duration}</span>
+                                        </h5>
+                                        <footer className={"blockquote-footer"}>
+                                            {estudio}
+                                        </footer>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </Col>
                 </Row>
             </Container>
