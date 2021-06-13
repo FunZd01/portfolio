@@ -4,6 +4,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import {exp} from '../skills';
 import {data} from '../experience';
+import {est} from '../Estudios';
 
 const About = () => (
     <Layout>
@@ -28,24 +29,26 @@ const About = () => (
                 <Row>
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Habilidades</h1>
-                        {
-                            exp.map(({skill, percentage}, i) => (
-                                <div className="py-3" key={i}>
-                                    <h5>{skill}</h5>
-                                    <div className="progress">
-                                        <div className={"progress-bar-striped progress-bar-animated bg-info"}
-                                             role={"progressbar"} style={{width: `${percentage}%`}}>
+                        <div className="border border-info rounded p-2">
+                            {
+                                exp.map(({skill, percentage}, i) => (
+                                    <div className="py-3" key={i}>
+                                        <h5>{skill}</h5>
+                                        <div className="progress">
+                                            <div className={"progress-bar-striped progress-bar-animated bg-info"}
+                                                 role={"progressbar"} style={{width: `${percentage}%`}}>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
+                        </div>
                     </Col>
                     <Col xs={12} md={6} className={"rounded p-2 bg-dark  text-light"}>
                         <h1 className={"text-center"}>Experiencia</h1>
                         {
                             data.map(({cargo, company, duration, year, yearf, desc}, i) => (
-                                <div className={"py-3 border border-info rounded m-2"} key={i}>
+                                <div className={"p-2 border border-info rounded m-2"} key={i}>
                                     <div className={"blockquote"}>
                                         <h5>{cargo}
                                             <span className={"text-muted"}> at {company}</span>
@@ -63,7 +66,20 @@ const About = () => (
                     </Col>
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Estudios</h1>
-
+                        {
+                            est.map(({duration, place, estudio}, i) => (
+                                <div key={i}>
+                                    <div className={"blockquote border border-info rounded p-2 mb-2"}>
+                                        <h5>{place}
+                                            <span className={"text-muted"}> {duration}</span>
+                                        </h5>
+                                        <footer className={"blockquote-footer"}>
+                                            {estudio}
+                                        </footer>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </Col>
                 </Row>
             </Container>
