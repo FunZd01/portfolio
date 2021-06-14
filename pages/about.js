@@ -17,6 +17,7 @@ const About = () => (
                                width={"200"}>
                         </Image>
                     </Col>
+                    {/*presentacion*/}
                     <Col className={"text-center"} xs={12} md={5}>
                         <h3>BACKEND DEVELOPER</h3>
                         autodidacta, responsable y amante de los desafios que requieran usar el ingenio!<br/>
@@ -26,6 +27,7 @@ const About = () => (
                         </button>
                     </Col>
                 </Row>
+                {/*agregando habilidades*/}
                 <Row>
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Habilidades</h1>
@@ -44,6 +46,7 @@ const About = () => (
                             }
                         </div>
                     </Col>
+                    {/*agregando experiencia*/}
                     <Col xs={12} md={6} className={"rounded p-2 bg-dark  text-light"}>
                         <h1 className={"text-center"}>Experiencia</h1>
                         {
@@ -64,6 +67,7 @@ const About = () => (
                             ))
                         }
                     </Col>
+                    {/*agregando estudios*/}
                     <Col xs={12} md={3} className={"rounded p-2 border border-info bg-light"}>
                         <h1 className={"text-center"}>Estudios</h1>
                         {
@@ -80,6 +84,21 @@ const About = () => (
                                 </div>
                             ))
                         }
+                        <hr/>
+                    {/*    agregando intereses */}
+                        <div className="rounded border border-info p-2 text-center">
+                            <h1>
+                                Intereses
+                            </h1>
+                            <h5 className={"h5"}>
+                                <pre>
+                                    
+                                    lectura   musica <br/>
+                                <span className={"h4"}>breaking</span><br/>
+                                ajedrez   gastronomia
+                                </pre>
+                            </h5>
+                        </div>
                     </Col>
                 </Row>
             </Container>
