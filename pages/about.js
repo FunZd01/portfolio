@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image';
 import {exp} from '../skills';
 import {data} from '../experience';
 import {est} from '../Estudios';
+import Link from 'next/link';
 
 const About = () => (
     <Layout>
@@ -21,10 +22,12 @@ const About = () => (
                     <Col className={"text-center mt-md-4"} xs={12} md={5}>
                         <h3>BACKEND DEVELOPER</h3>
                         autodidacta, responsable y amante de los desafios que requieran usar el ingenio!<br/>
-                        <button type={"button"} className={"btn btn-dark rounded-pill p-2 mt-3 mb-2"}
-                                style={{width: '100%'}}>
-                            CONTRATAR!
-                        </button>
+                        <Link href={"/contactame"}>
+                            <button type={"button"} className={"btn btn-dark rounded-pill p-2 mt-3 mb-2"}
+                                    style={{width: '100%'}}>
+                                CONTRATAR!
+                            </button>
+                        </Link>
                     </Col>
                 </Row>
                 {/*agregando habilidades*/}
@@ -85,7 +88,7 @@ const About = () => (
                             ))
                         }
                         <hr/>
-                    {/*    agregando intereses */}
+                        {/*    agregando intereses */}
                         <div className="rounded border border-info p-2 text-center">
                             <h1>
                                 Intereses
