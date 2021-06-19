@@ -1,47 +1,47 @@
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 import {Container, Row, Col, InputGroup, FormControl} from 'react-bootstrap';
+// import 'email-js' from 'email-com';
+import {useForm} from 'react-hook-form';
 
-const Contact = () => (
-    <Layout>
-        <div className={styles.main}>
-            <Container>
-                <Row>
-                    <Col xs={12} className={"bg-dark m-2 p-2 rounded"}>
-                        <div>
-                            <InputGroup className="mb-3" v-model={"from_name"}>
-                                <InputGroup.Prepend>
-                                    <InputGroup.Text id="name">empleador </InputGroup.Text>
-                                </InputGroup.Prepend>
-                                <FormControl
-                                    placeholder="username@gmail.com"
-                                    aria-label="from"
-                                    aria-describedby="name"
-                                    type={"email"}
-                                    required={true}
-                                />
-                            </InputGroup>
-                            <InputGroup>
-                                <InputGroup.Prepend>
-                                    <InputGroup.Text>solicitud: </InputGroup.Text>
-                                </InputGroup.Prepend>
-                                <FormControl as="textarea" aria-label="solicitud"/>
-                            </InputGroup>
+const Contact = () => {
 
-                            <div className="h3 text-end">
-                                <button className={"btn btn-outline-danger m-2 p-2 rounded ml-auto"}>
-                                    cancelar
-                                </button>
-                                <button className={"btn btn-outline-info m-2 p-2 rounded"}>
-                                    Solicitar!
-                                </button>
+    return (
+        <Layout>
+            <div className={styles.main}>
+                <Container className={"mb-2"}>
+                    <Row className={"justify-content-center"}>
+                        <Col className={"bg-dark m-2 p-2 rounded text-center"}>
+                            <div className={"border border-info"}>
+                                <h3>
+                                    Contacto
+                                </h3>
+                                {/*formulario*/}
+                                <form className={"p-3 rounded-pill mb-2 text-center"} action="POST" id="contact-form"
+                                      style={{height: '65vh'}}>
+                                    <input className={"p-3 rounded-pill mb-3 text-center"} type="text"
+                                           name={"user_name"}
+                                           placeholder={"Nombre"} style={{width: '65vw'}} required={true}/>
+                                    <br/>
+                                    <input className={"p-3 rounded-pill mb-3 text-center input"} type="email"
+                                           name={"user_email"}
+                                           placeholder={"Email"} style={{width: '65vw'}} required={true}/>
+                                    <br/>
+                                    <textarea className={"p-3 rounded mb-3 text-center"} name="message"
+                                              placeholder={"mensaje de solicitud"} style={{width: '65vw'}}
+                                              rows={5} required={true}></textarea>
+                                    <br/>
+                                    <button type={"submit"}
+                                            className={"btn btn-outline-info border border-dark rounded-pill m-2"}>
+                                        Solicitar
+                                    </button>
+                                </form>
                             </div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    </Layout>
-)
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        </Layout>)
+}
 
 export default Contact;
