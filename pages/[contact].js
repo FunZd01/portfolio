@@ -27,7 +27,7 @@ export default function Contact() {
                         </h3>
                         {/*formulario*/}
                         <form className={"p-3 rounded-pill mb-2 text-center"} onSubmit={sendEmail}>
-                            <input className={"p-3 rounded-pill mb-3 text-center text-light text-uppercase"} type="text"
+                            <input className={"p-3 rounded-pill mb-3 text-center text-uppercase"} type="text"
                                    name={"name"} required={true}/>
                             <br/>
                             <input className={"p-3 rounded-pill mb-3 text-center input"} type="email"
