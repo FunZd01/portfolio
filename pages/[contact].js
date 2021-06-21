@@ -28,13 +28,13 @@ export default function Contact() {
                         {/*formulario*/}
                         <form className={"p-3 rounded-pill mb-2 text-center"} onSubmit={sendEmail}>
                             <input className={"p-3 rounded-pill mb-3 text-center text-uppercase"} type="text"
-                                   name={"name"} required={true}/>
+                                   name={"name"} required={true} placeholder={"Nombre"}/>
                             <br/>
                             <input className={"p-3 rounded-pill mb-3 text-center input"} type="email"
                                    name={"user_email"} placeholder={"ej: miEmail@gmail.com"} required={true}/>
                             <br/>
                             <textarea className={"p-3 rounded mb-3 text-center"} name="message"
-                                      placeholder={"mensaje"} rows={5} required={true}>
+                                      placeholder={"Mensaje"} rows={5} required={true}>
 
                             </textarea>
                             <br/>
