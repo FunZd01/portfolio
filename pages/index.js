@@ -8,7 +8,7 @@ const index = () => (
             <main className={styles.main}>
                 <div className="col-6">
                     <h1 className={styles.title}>
-                        <Link href="#">
+                        <Link href="/contactaME">
                             <a>DOMINGO FUNEZ!</a>
                         </Link>
                     </h1>
