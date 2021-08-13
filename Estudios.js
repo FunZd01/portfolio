@@ -11,7 +11,7 @@ export const est = [
     },
     {
         duration: '2015-2016',
-        place: 'Computacion Tecnica Profesional',
+        place: 'CTP',
         estudio: 'Diseño grafico'
     },
 ]

@@ -3,10 +3,16 @@ export const data = [
         cargo: "Python backend developer",
         company: "Jobitx",
         duration: "Noviembre - Febrero",
-        year: 2021,
-        yearf:2022,
-        desc: "Este ha sido mi primer empleo en el area del IT, en el cual fui capaz " +
-            " de desarrollar y cumplir con las tareas propuestas, un poco complicado al"
-            + " inicio, pues no es lo mismo realizar tareas de la universidad que tareas para un trabajo profesional"
+        year: 2020,
+        yearf:2021,
+        desc: "Encargado del backend de sistema ERP para empresa privada bioagro.sa"
     },
+    {
+        cargo: "Arduino developer",
+        company: "UNAN-Leon",
+        duration: "Julio - Agosto",
+        year: 2020,
+        yearf: 2020,
+        desc: ""
+    }
 ]
