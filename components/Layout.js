@@ -1,6 +1,5 @@
 import Navbar from './Navbar';
 import Head from "next/head";
-import styles from '../styles/Home.module.css'
 
 //obteniendo anio
 let year = new Date().getUTCFullYear();
@@ -12,10 +11,10 @@ const Layout = ({children}) => (
             <meta name="description" content="Domingo Funez: backend developer (programador),
              autodidacta, responsable y amante de los desafios que requieran usar el ingenio!"/>
         </Head>
-        <div className={styles.container}>
+        <div style={{height:'87vh',top:'3.5px'}}>
             <Navbar/>
             {children}
-            <footer className={styles.footer}>
+            <footer className={"bg-info text-center text-dark"} style={{height:'2em'}}>
                     &copy; Domingo funez, {year}
             </footer>
         </div>
