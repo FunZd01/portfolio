@@ -16,10 +16,10 @@ const Contact =()=> {
     }
     return (
         <Layout>
-            <div className={"container"}>
+            <div className={"container"} style={{height:'85vh'}}>
                 <div className={"row justify-content-center"}>
                     <div className={"col-md-6 bg-dark p-3 mt-5 rounded text-light text-center"}>
-                        <div className={"border border-info "}>
+                        <div className={"border border-info"}>
                             <h3>
                                 Contacto
                             </h3>

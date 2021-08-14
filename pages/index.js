@@ -5,7 +5,7 @@ import Link from 'next/link'
 const index = () => (
     <Layout>
         {/*<div className="bg">*/}
-            <main className={styles.main}>
+            <main style={{height:'85vh'}}>
                 <div className="col-6">
                     <h1 className={styles.title}>
                         <Link href="/contactaME">

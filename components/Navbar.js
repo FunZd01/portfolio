@@ -1,9 +1,8 @@
-import '../styles/Home.module.css';
 import Link from "next/link";
 import {Navbar, Container} from 'react-bootstrap';
 
 const Navbars = () => (
-    <Navbar bg="info" className={"rounded border-bottom border-light"} expand="lg" fixed={"top"}>
+    <Navbar bg="info" className={"rounded border-bottom border-light"} style={{height:"10vh"}} expand="lg" fixed={"top"}>
         <Container>
             <Link href="/">
                 <Navbar.Brand><a>Portfolio</a></Navbar.Brand>

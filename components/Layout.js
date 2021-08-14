@@ -11,11 +11,11 @@ const Layout = ({children}) => (
             <meta name="description" content="Domingo Funez: backend developer (programador),
              autodidacta, responsable y amante de los desafios que requieran usar el ingenio!"/>
         </Head>
-        <div style={{height:'87vh',top:'3.5px'}}>
+        <div style={{height:'90vh'}}>
             <Navbar/>
             {children}
-            <footer className={"bg-info text-center text-dark"} style={{height:'2em'}}>
-                    &copy; Domingo funez, {year}
+            <footer className={"bg-info text-center"} style={{height:'5vh',color:'#000'}}>
+                   <p> &copy; Domingo funez, {year}</p>
             </footer>
         </div>
     </>

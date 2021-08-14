@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import {exp} from '../skills';
@@ -9,7 +8,7 @@ import Link from 'next/link';
 
 const About = () => (
     <Layout>
-        <div className={styles.main}>
+        <div>
             <Container className={"mb-2"}>
                 <Row className={"bg-info p-2 justify-content-center text-center rounded"}>
                     <Col className={"m-2"} xs={10} md={3}>
