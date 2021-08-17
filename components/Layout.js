@@ -8,6 +8,7 @@ const Layout = ({children}) => (
     <>
         <Head>
             <title>portfolio</title>
+            <link rel="shortcut icon" href="../public/background.ico" />
             <meta name="description" content="Domingo Funez: backend developer (programador),
              autodidacta, responsable y amante de los desafios que requieran usar el ingenio!"/>
         </Head>
