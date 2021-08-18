@@ -13,8 +13,7 @@ const About = () => (
                 <Row className={"bg-info p-2 justify-content-center text-center rounded"}>
                     <Col className={"m-2"} xs={10} md={3}>
                         <Image className={"border border-dark"} src={"profile.jpg"} alt={"foto de perfil"}
-                               roundedCircle={true} thumbnail={true}
-                               width={"200"}>
+                            roundedCircle={true} thumbnail={true} width={"200"}>
                         </Image>
                     </Col>
                     {/*presentacion*/}
